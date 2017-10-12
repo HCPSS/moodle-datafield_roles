@@ -1,0 +1,47 @@
+<table width="100%" cellpadding="5">
+    <tr>
+        <td class="c0">
+            <label for="name">
+                <?php echo get_string('fieldname', 'data'); ?>
+            </label>
+        </td>
+        <td class="c1">
+            <input 
+                class="fieldname" 
+                type="text" 
+                name="name" 
+                id="name" 
+                value="<?php p($this->field->name); ?>" />
+        </td>
+    </tr>
+    <tr>
+        <td class="c0">
+            <label for="description">
+                <?php echo get_string('fielddescription', 'data'); ?>
+            </label>
+        </td>
+        <td class="c1">
+            <input 
+                class="fielddescription" 
+                type="text" 
+                name="description" 
+                id="description"
+                value="<?php p($this->field->description); ?>" />
+        </td>
+    </tr>
+    <tr>
+        <td class="c0">
+            <label for="seperator">
+                <?php echo get_string('seperator', 'datafield_roles'); ?>
+            </label>
+        </td>
+        <td class="c1">
+            <input 
+                class="fieldseperator"
+                type="text"
+                name="param1"
+                id="seperator"
+                value="<?php if(isset($this->field->seperator)){ p($this->field->seperator); } else { echo ', '; } ?>" />
+        </td>
+    </tr>
+</table>
