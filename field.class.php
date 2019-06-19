@@ -53,4 +53,8 @@ class data_field_roles extends data_field_base {
     public function display_search_field($value = '') {
         return '';
     }
+    
+    public function parse_search_field($defaults = null) {
+        return;
+    }
 }
